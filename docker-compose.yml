@@ -1,0 +1,25 @@
+version: "3.8"
+
+services:
+  web:
+    image: altravionix-react
+    container_name: altravionix-react
+    restart: always
+    expose:
+      - "80"
+
+  caddy:
+    image: caddy:alpine
+    container_name: caddy
+    restart: always
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile
+      - caddy_data:/data
+      - caddy_config:/config
+
+volumes:
+  caddy_data:
+  caddy_config:

@@ -1,0 +1,3 @@
+altravionix.com {
+    reverse_proxy web:80
+}
