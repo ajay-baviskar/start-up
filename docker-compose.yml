@@ -6,7 +6,7 @@ services:
     container_name: altravionix-react
     restart: always
     expose:
-      - "80"
+      - "5000"
 
   caddy:
     image: caddy:alpine
