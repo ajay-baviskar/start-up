@@ -1,21 +1,18 @@
-version: "3.8"
+version: '3.8'
 
 services:
-  web:
-    build: .
-    image: altravionix-react
-    container_name: altravionix-react
-    restart: always
+  react-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: altravionix
     ports:
       - "5000:5000"
     environment:
-      - VIRTUAL_HOST=altravionix.com,www.altravionix.com
-      - VIRTUAL_PORT=5000
-      - LETSENCRYPT_HOST=altravionix.com,www.altravionix.com
-      - LETSENCRYPT_EMAIL=admin@altravionix.com
-    networks:
-      - ngnix-proxy_shared-network
-
-networks:
-  ngnix-proxy_shared-network:
-    external: true
+      - CHOKIDAR_USEPOLLING=true
+      - WDS_SOCKET_PORT=0
+    volumes:
+      - .:/app
+      - /app/node_modules
+    stdin_open: true
+    tty: true
