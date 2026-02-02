@@ -28,7 +28,7 @@ export function Contact() {
 
   try {
     const response = await fetch(
-      `${import.meta.env.VITE_API_BASE_URL}/api/contact`,
+      `https://api.altravionix.com/api/contact`,
       {
         method: 'POST',
         headers: {
