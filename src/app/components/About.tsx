@@ -24,14 +24,14 @@ export function About() {
               <div className="bg-gradient-to-br from-indigo-50 to-purple-50 rounded-2xl p-6 border border-indigo-100">
                 <div className="flex items-center gap-3 mb-2">
                   <Users className="text-indigo-600" size={24} />
-                  <div className="text-3xl font-bold text-gray-900">15+</div>
+                  <div className="text-3xl font-bold text-gray-900">3+</div>
                 </div>
                 <div className="text-gray-600">Expert Team Members</div>
               </div>
               <div className="bg-gradient-to-br from-purple-50 to-pink-50 rounded-2xl p-6 border border-purple-100">
                 <div className="flex items-center gap-3 mb-2">
                   <Award className="text-purple-600" size={24} />
-                  <div className="text-3xl font-bold text-gray-900">98%</div>
+                  <div className="text-3xl font-bold text-gray-900">100%</div>
                 </div>
                 <div className="text-gray-600">Success Rate</div>
               </div>

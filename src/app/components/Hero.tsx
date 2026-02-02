@@ -51,11 +51,11 @@ export function Hero() {
             {/* Stats */}
             <div className="grid grid-cols-3 gap-6 pt-8">
               <div className="bg-white rounded-2xl p-4 shadow-md border border-indigo-100">
-                <div className="text-3xl font-bold text-indigo-600">50+</div>
+                <div className="text-3xl font-bold text-indigo-600">3+</div>
                 <div className="text-sm text-gray-600">Projects Delivered</div>
               </div>
               <div className="bg-white rounded-2xl p-4 shadow-md border border-purple-100">
-                <div className="text-3xl font-bold text-purple-600">98%</div>
+                <div className="text-3xl font-bold text-purple-600">100%</div>
                 <div className="text-sm text-gray-600">Client Satisfaction</div>
               </div>
               <div className="bg-white rounded-2xl p-4 shadow-md border border-pink-100">

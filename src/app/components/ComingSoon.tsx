@@ -118,7 +118,8 @@ export function ComingSoon() {
         </div>
 
         {/* Center Showcase */}
-        <div className="bg-white/10 backdrop-blur-md rounded-3xl p-12 border border-white/20 text-center">
+        {/* MODIFIED: Changed p-12 to p-6 sm:p-12 to give more space on mobile */}
+        <div className="bg-white/10 backdrop-blur-md rounded-3xl p-6 sm:p-12 border border-white/20 text-center">
           <div className="w-24 h-24 bg-gradient-to-r from-yellow-400 to-pink-400 rounded-full flex items-center justify-center mx-auto mb-6">
             <Brain size={48} className="text-indigo-900" />
           </div>
@@ -144,7 +145,8 @@ export function ComingSoon() {
 
             <div className="max-w-md mx-auto">
               {/* Input + Button Row */}
-              <div className="flex gap-3">
+              {/* MODIFIED: Added flex-col sm:flex-row to stack items vertically on mobile */}
+              <div className="flex flex-col sm:flex-row gap-3">
                 <input
                   type="email"
                   value={email}
@@ -156,7 +158,8 @@ export function ComingSoon() {
                 <button
                   onClick={handleNotify}
                   disabled={loading}
-                  className="px-8 py-3 bg-gradient-to-r from-yellow-400 to-pink-400 text-indigo-900 font-semibold rounded-full hover:shadow-2xl transition-all disabled:opacity-60"
+                  /* MODIFIED: Added w-full sm:w-auto so button fills width on mobile */
+                  className="w-full sm:w-auto px-8 py-3 bg-gradient-to-r from-yellow-400 to-pink-400 text-indigo-900 font-semibold rounded-full hover:shadow-2xl transition-all disabled:opacity-60"
                 >
                   {loading ? '...' : 'Notify Me'}
                 </button>
