@@ -20,8 +20,8 @@ export function Header() {
           {/* Logo */}
 <div className="flex items-center">
   <img
-    src="https://mixed-yellow-gull.myfilebase.com/ipfs/QmWZegzxfgNPyiDyYE1pxY9Dfw9SwHHB4o1a2bH52Tw3mT"
-    alt="ABNexia Logo"
+    src="https://mixed-yellow-gull.myfilebase.com/ipfs/QmetHxtp1BMH4CMfPwpyVmG8ZzZqTZd9bWZ2JNgdHqkoHn"
+    alt="Altravionix Logo"
     className="h-12 md:h-15 w-auto object-contain"
   />
 </div>
