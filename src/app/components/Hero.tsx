@@ -75,7 +75,8 @@ export function Hero() {
                 alt="AI and Software Development"
                 loading="eager"
                 decoding="async"
-                className="w-full h-[500px] object-cover object-center"
+                // MODIFIED: Changed 'h-[500px]' to 'h-auto lg:h-[500px]' for better mobile responsiveness
+                className="w-full h-auto lg:h-[500px] object-cover object-center"
                 style={{
                   imageRendering: "auto",
                   transform: "translateZ(0)",
