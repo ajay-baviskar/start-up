@@ -34,7 +34,8 @@ export function Services() {
   ];
 
   return (
-    <section id="services" className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-purple-50 via-pink-50 to-orange-50">
+    // MODIFIED: Changed 'py-20' to 'pt-0 pb-20' to remove top space
+    <section id="services" className="pt-0 pb-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-purple-50 via-pink-50 to-orange-50">
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
