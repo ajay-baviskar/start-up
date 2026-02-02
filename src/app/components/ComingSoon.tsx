@@ -11,7 +11,7 @@ export function ComingSoon() {
   };
 
   const aiFeatures = [
-    { 
+    {
       icon: <Bot size={28} />,
       title: 'AI Chatbots',
       description: 'Intelligent conversational agents for customer support and engagement',
@@ -45,13 +45,14 @@ export function ComingSoon() {
 
     try {
       const res = await fetch(
-        `${import.meta.env.VITE_API_BASE_URL}/api/notify`,
+        'https://api.altravionix.com/api/notify',
         {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ email }),
         }
       );
+
 
       const data = await res.json();
 
@@ -141,33 +142,33 @@ export function ComingSoon() {
               </div>
             )}
 
-           <div className="max-w-md mx-auto">
-  {/* Input + Button Row */}
-  <div className="flex gap-3">
-    <input
-      type="email"
-      value={email}
-      onChange={(e) => setEmail(e.target.value)}
-      placeholder="Enter your email for early access"
-      className="flex-1 px-6 py-3 rounded-full bg-white/20 backdrop-blur-sm border border-white/30 placeholder-gray-300 text-white focus:outline-none focus:ring-2 focus:ring-yellow-400"
-    />
+            <div className="max-w-md mx-auto">
+              {/* Input + Button Row */}
+              <div className="flex gap-3">
+                <input
+                  type="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  placeholder="Enter your email for early access"
+                  className="flex-1 px-6 py-3 rounded-full bg-white/20 backdrop-blur-sm border border-white/30 placeholder-gray-300 text-white focus:outline-none focus:ring-2 focus:ring-yellow-400"
+                />
 
-    <button
-      onClick={handleNotify}
-      disabled={loading}
-      className="px-8 py-3 bg-gradient-to-r from-yellow-400 to-pink-400 text-indigo-900 font-semibold rounded-full hover:shadow-2xl transition-all disabled:opacity-60"
-    >
-      {loading ? '...' : 'Notify Me'}
-    </button>
-  </div>
+                <button
+                  onClick={handleNotify}
+                  disabled={loading}
+                  className="px-8 py-3 bg-gradient-to-r from-yellow-400 to-pink-400 text-indigo-900 font-semibold rounded-full hover:shadow-2xl transition-all disabled:opacity-60"
+                >
+                  {loading ? '...' : 'Notify Me'}
+                </button>
+              </div>
 
-  {/* Validation Message BELOW */}
-  {email && !isValidEmail(email) && (
-    <p className="mt-2 text-sm text-red-300 text-left">
-      Please enter a valid email address
-    </p>
-  )}
-</div>
+              {/* Validation Message BELOW */}
+              {email && !isValidEmail(email) && (
+                <p className="mt-2 text-sm text-red-300 text-left">
+                  Please enter a valid email address
+                </p>
+              )}
+            </div>
 
           </div>
         </div>
