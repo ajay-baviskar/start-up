@@ -6,7 +6,7 @@ export function Process() {
       number: '01',
       icon: <Search size={32} />,
       title: 'Discover',
-      description: 'Understanding your business goals, target audience, and project requirements through detailed consultation.',
+      description: 'We understand your goals, audience, and requirements through detailed consultation.',
       color: 'from-blue-500 to-cyan-500',
     },
     {
@@ -77,7 +77,7 @@ export function Process() {
                 {/* Content */}
                 <div className="text-center bg-white rounded-2xl p-4 shadow-md hover:shadow-xl transition-shadow">
                   <h3 className="text-xl font-bold mb-2 text-gray-900">{step.title}</h3>
-                  <p className="text-gray-600 leading-relaxed text-sm">{step.description}</p>
+                  <p className="text-gray-600 leading-relaxed">{step.description}</p>
                 </div>
               </div>
             ))}
@@ -86,7 +86,7 @@ export function Process() {
 
         {/* CTA */}
         <div className="mt-16 text-center">
-          <p className="text-lg text-gray-600 mb-6">Ready to start your project?</p>
+          <p className="text-xl text-gray-600 mb-6">Ready to start your project?</p>
           <button 
             onClick={() => {
               const element = document.getElementById('contact');

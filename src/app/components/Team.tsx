@@ -54,7 +54,7 @@ export function Team() {
             
               {/* Content */}
               <div className="p-8">
-                <h3 className="text-2xl font-bold mb-1 text-gray-900">{leader.name}</h3>
+                <h3 className="text-xl font-bold mb-1 text-gray-900">{leader.name}</h3>
                 <p className="text-indigo-600 font-semibold mb-4">{leader.role}</p>
                 
                 <p className="text-gray-600 leading-relaxed mb-6">
@@ -63,7 +63,7 @@ export function Team() {
 
                 {/* Expertise Tags */}
                 <div className="mb-6">
-                  <div className="text-sm font-semibold text-gray-900 mb-3">Expertise:</div>
+                  <div className="text-xl font-bold text-gray-900 mb-3">Expertise:</div>
                   <div className="flex flex-wrap gap-2">
                     {leader.expertise.map((skill, idx) => (
                       <span 

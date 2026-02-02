@@ -14,7 +14,7 @@ export function About() {
               We are a startup-focused, innovation-driven technology company dedicated to helping businesses 
               navigate the digital landscape with confidence and creativity.
             </p>
-            <p className="text-lg text-gray-600 mb-8 leading-relaxed">
+            <p className="text-xl text-gray-600 mb-8 leading-relaxed">
               Our team of experts specializes in creating custom software solutions, building responsive 
               web platforms, and implementing cutting-edge AI technologies that drive real business results.
             </p>
@@ -26,14 +26,14 @@ export function About() {
                   <Users className="text-indigo-600" size={24} />
                   <div className="text-3xl font-bold text-gray-900">3+</div>
                 </div>
-                <div className="text-gray-600">Expert Team Members</div>
+                <div className="text-xl text-gray-600">Expert Team Members</div>
               </div>
               <div className="bg-gradient-to-br from-purple-50 to-pink-50 rounded-2xl p-6 border border-purple-100">
                 <div className="flex items-center gap-3 mb-2">
                   <Award className="text-purple-600" size={24} />
                   <div className="text-3xl font-bold text-gray-900">100%</div>
                 </div>
-                <div className="text-gray-600">Success Rate</div>
+                <div className="text-xl text-gray-600">Success Rate</div>
               </div>
             </div>
           </div>
@@ -47,7 +47,7 @@ export function About() {
                   <Target size={28} />
                 </div>
                 <div>
-                  <h3 className="text-2xl font-bold mb-3 text-gray-900">Our Mission</h3>
+                  <h3 className="text-xl font-bold mb-3 text-gray-900">Our Mission</h3>
                   <p className="text-gray-600 leading-relaxed">
                     To empower businesses with innovative technology solutions that drive growth, 
                     efficiency, and competitive advantage in the digital age. We strive to make 
@@ -64,7 +64,7 @@ export function About() {
                   <Eye size={28} />
                 </div>
                 <div>
-                  <h3 className="text-2xl font-bold mb-3 text-gray-900">Our Vision</h3>
+                  <h3 className="text-xl font-bold mb-3 text-gray-900">Our Vision</h3>
                   <p className="text-gray-600 leading-relaxed">
                     To be the leading technology partner for startups and established businesses 
                     worldwide, recognized for our innovation, quality, and commitment to client 
@@ -77,7 +77,7 @@ export function About() {
 
             {/* Values Highlight */}
             <div className="bg-gradient-to-r from-indigo-600 to-purple-600 rounded-3xl p-8 text-white shadow-lg">
-              <h3 className="text-2xl font-bold mb-4">Our Core Values</h3>
+              <h3 className="text-xl font-bold mb-4">Our Core Values</h3>
               <div className="grid grid-cols-2 gap-4">
                 <div className="flex items-center gap-2">
                   <div className="w-2 h-2 bg-white rounded-full"></div>

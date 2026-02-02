@@ -26,30 +26,6 @@ export function Testimonials() {
       text: 'Their digital marketing strategies delivered incredible ROI. We saw a 250% increase in qualified leads within 3 months. The team is responsive, creative, and results-driven.',
       gradient: 'from-purple-500 to-indigo-500',
     },
-    // {
-    //   name: 'David Park',
-    //   role: 'CTO, InnovateLab',
-    //   image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop',
-    //   rating: 5,
-    //   text: 'Exceptional development team! They built a complex SaaS platform with cutting-edge features. The code quality is excellent and their modern tech stack ensures scalability.',
-    //   gradient: 'from-green-500 to-emerald-500',
-    // },
-    // {
-    //   name: 'Lisa Thompson',
-    //   role: 'Owner, Boutique Ventures',
-    //   image: 'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=150&h=150&fit=crop',
-    //   rating: 5,
-    //   text: 'From concept to launch, Altravionix guided us every step of the way. Our website is beautiful, fast, and converts visitors into customers. Couldn\'t be happier!',
-    //   gradient: 'from-orange-500 to-amber-500',
-    // },
-    // {
-    //   name: 'James Wilson',
-    //   role: 'VP Product, FutureTech',
-    //   image: 'https://images.unsplash.com/photo-1519345182560-3f2917c472ef?w=150&h=150&fit=crop',
-    //   rating: 5,
-    //   text: 'Altravionix understands modern technology like no other. They helped us implement AI features that set us apart from competitors. True innovation partners!',
-    //   gradient: 'from-violet-500 to-purple-500',
-    // },
   ];
 
   return (
@@ -97,8 +73,8 @@ export function Testimonials() {
                   className="w-14 h-14 rounded-full object-cover border-2 border-gray-200"
                 />
                 <div>
-                  <div className="font-bold text-gray-900">{review.name}</div>
-                  <div className="text-sm text-gray-600">{review.role}</div>
+                  <div className="text-xl font-bold text-gray-900">{review.name}</div>
+                  <div className="text-gray-600">{review.role}</div>
                 </div>
               </div>
             </div>

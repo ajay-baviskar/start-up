@@ -59,34 +59,6 @@ export function WhyChooseUs() {
             </div>
           ))}
         </div>
-
-        {/* Trust Indicators */}
-        {/* <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-          <div className="bg-white rounded-2xl p-6 shadow-md border border-indigo-100">
-            <div className="text-4xl font-bold text-indigo-600 mb-2">
-              5+
-            </div>
-            <div className="text-gray-600">Years Experience</div>
-          </div>
-          <div className="bg-white rounded-2xl p-6 shadow-md border border-purple-100">
-            <div className="text-4xl font-bold text-purple-600 mb-2">
-              50+
-            </div>
-            <div className="text-gray-600">Happy Clients</div>
-          </div>
-          <div className="bg-white rounded-2xl p-6 shadow-md border border-pink-100">
-            <div className="text-4xl font-bold text-pink-600 mb-2">
-              100+
-            </div>
-            <div className="text-gray-600">Projects Completed</div>
-          </div>
-          <div className="bg-white rounded-2xl p-6 shadow-md border border-blue-100">
-            <div className="text-4xl font-bold text-blue-600 mb-2">
-              15+
-            </div>
-            <div className="text-gray-600">Team Members</div>
-          </div>
-        </div> */}
       </div>
     </section>
   );

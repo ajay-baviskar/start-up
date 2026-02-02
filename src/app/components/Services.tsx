@@ -1,4 +1,4 @@
-import { Smartphone, Globe, TrendingUp, Brain, ArrowRight, Sparkles } from 'lucide-react';
+import { Smartphone, Globe, TrendingUp, Brain, Sparkles } from 'lucide-react';
 
 export function Services() {
   const services = [
@@ -34,7 +34,6 @@ export function Services() {
   ];
 
   return (
-    // MODIFIED: Changed 'py-20' to 'pt-0 pb-20' to remove top space
     <section id="services" className="pt-0 pb-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-purple-50 via-pink-50 to-orange-50">
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
@@ -74,7 +73,7 @@ export function Services() {
                 </div>
 
                 {/* Content */}
-                <h3 className="text-2xl font-bold mb-3 text-gray-900">{service.title}</h3>
+                <h3 className="text-xl font-bold mb-3 text-gray-900">{service.title}</h3>
                 <p className="text-gray-600 mb-6 leading-relaxed">{service.description}</p>
 
                 {/* Features */}
@@ -86,12 +85,6 @@ export function Services() {
                     </li>
                   ))}
                 </ul>
-
-                {/* Learn More Link */}
-                {/* <button className={`flex items-center gap-2 font-semibold bg-gradient-to-r ${service.gradient} bg-clip-text text-transparent group-hover:gap-3 transition-all`}>
-                  Learn More
-                  <ArrowRight size={16} />
-                </button> */}
               </div>
             </div>
           ))}

@@ -96,8 +96,8 @@ export function Contact() {
           {/* Contact Info */}
           <div className="space-y-8">
             <div>
-              <h3 className="text-2xl font-bold mb-6 text-gray-900">Get in Touch</h3>
-              <p className="text-gray-600 mb-8 leading-relaxed">
+              <h3 className="text-3xl font-bold mb-6 text-gray-900">Get in Touch</h3>
+              <p className="text-xl text-gray-600 mb-8 leading-relaxed">
                 We're here to help bring your vision to life. Whether you have a question about our services,
                 pricing, or anything else, our team is ready to answer all your questions.
               </p>
@@ -109,7 +109,7 @@ export function Contact() {
                   <Mail size={20} className="text-white" />
                 </div>
                 <div>
-                  <div className="font-semibold text-gray-900 mb-1">Email Us</div>
+                  <div className="text-xl font-bold text-gray-900 mb-1">Email Us</div>
                   <a href="mailto:ajay@altravionix.com" className="text-indigo-600">
                     ajay@altravionix.com
                   </a>
@@ -121,7 +121,7 @@ export function Contact() {
                   <Phone size={20} className="text-white" />
                 </div>
                 <div>
-                  <div className="font-semibold text-gray-900 mb-1">Call Us</div>
+                  <div className="text-xl font-bold text-gray-900 mb-1">Call Us</div>
                   <a href="tel:+8087936880" className="text-purple-600">
                     +91 8087936880 / +91 8793314670
                   </a>
@@ -133,7 +133,7 @@ export function Contact() {
                   <MapPin size={20} className="text-white" />
                 </div>
                 <div>
-                  <div className="font-semibold text-gray-900 mb-1">Visit Us</div>
+                  <div className="text-xl font-bold text-gray-900 mb-1">Visit Us</div>
                   <p className="text-gray-600">
                     Flat No. 04, Sai Kamal Building, Sonar Ali, Dahiwali
 
